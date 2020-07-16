@@ -1,0 +1,75 @@
+:root {
+  --main-gray: #999;
+}
+body {
+  font-size: 16px;
+}
+.main-gray {
+  color: var(--main-gray);
+}
+.container {
+  width: 901px;
+  margin: 0 auto;
+}
+.d-flex {
+  display: flex;
+}
+/* nav */
+nav {
+  padding: 1.3em 0;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+}
+nav h1 {
+  display: flex;
+}
+nav h1 img {
+  margin-right: 0.8em;
+  height: 100%;
+}
+nav h1 > span:nth-of-type(2) {
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Oswald", sans-serif;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+nav h1 > span:nth-of-type(2) span:nth-of-type(1) {
+  font-size: 1.5rem;
+  font-family: "Pacifico", cursive;
+  color: black;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+nav ul li {
+  display: flex;
+}
+nav ul li:not(:last-of-type) {
+  margin-right: 1.5px;
+}
+nav ul li:nth-child(6) {
+  margin-right: 10px;
+}
+
+/* main */
+.post .post-title {
+  font-size: 2rem;
+}
+.post div.d-flex:first-of-type,
+.post div.d-flex:first-of-type a {
+  justify-content: space-between;
+  color: var(--main-gray);
+}
+.post div.d-flex:first-of-type img {
+  height: 1rem;
+  margin-right: 5px;
+}
+.post .img img {
+  width: 100%;
+}
